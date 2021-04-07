@@ -1,0 +1,21 @@
+{
+  "name": "client-server-mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "gulp-sass": "^4.1.0",
+    "mongoose": "^5.12.0"
+  },
+  "scripts": {
+    "setup": "npm install && cd client && npm install",
+    "start": "node server/index.js",
+    "server": "set PORT=8080 && nodemon Server/index.js",
+    "client": "cd client && npm run start"
+  },
+  "author": "Adiv_Shenkor",
+  "license": "ISC"
+}

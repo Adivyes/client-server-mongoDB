@@ -1,0 +1,29 @@
+// import React, {useState} from 'react'
+
+
+// export default function Home() {
+//     const [movieData, setMovieData] = useState([])
+  
+//    function movieApiHandler(){
+//         return fetch("http://localhost:8080/movies/all")
+//         .then((res)=>{res.json()})
+//    }
+   
+//     async function getMovies(){
+//     try{
+//       await movieApiHandler().then((result)=>{
+//         console.log(result);
+//         console.log(movieData);
+//         setMovieData(result);
+
+//       })
+//     }
+//     catch(error){console.log(error);}
+//     } 
+    
+//     return (
+//         <div>
+//            <button onClick={()=>getMovies()}>get movies</button> 
+//         </div>
+//     )
+// }
