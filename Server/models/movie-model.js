@@ -3,10 +3,12 @@ const Schema = mongoose.Schema;
 
 const Movie = new Schema(
   {
-        movieName: { type: String, required: true },
-        rating: { type: Number, required: true },
-        genre: { type: String, required: true },
+        movieName:String,
+        rating: Number,
+        date: { 
+          type: Date, 
+          default: Date.now },
   },
-  { timeStamp: true }
+  
 );
 module.exports= mongoose.model('movies',Movie) 
